@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yoga</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="img/logo.png" class="nav__logo" id="logo" />
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-icon"></span>
+        </button>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="page1.html">Yoga</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="page2.html">Pilates</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="page3.html">Core</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__title header__title--yoga">
+        <div class="yoga__text">
+          <h1>
+            We welcome you to
+            <br />
+            <span class="highlight4">Yoga classes</span>
+          </h1>
+          <h4>A way to inner peace.</h4>
+        </div>
+        <video class="yoga__video" autoplay loop muted>
+          <source src="img/videoyoga.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
+
+    <section class="section section--yoga-info">
+      <div class="yoga-info__content">
+        <p class="yoga-info__bold">
+          Yoga is a practice that connects the body, breath, and mind.
+        </p>
+        <p>
+          It uses physical postures, breathing exercises, and meditation to
+          improve overall health. Yoga was developed as a spiritual practice
+          thousands of years ago. Today, most Westerners who do yoga do it for
+          exercise or to reduce stress.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--game">
+      <div class="game__container">
+        <h2 class="game__title">Match the Yoga Pose</h2>
+        <div class="game__instructions">
+          Drag the names to the correct pose.
+        </div>
+        <div class="game__poses">
+          <div class="pose" data-name="Warrior">
+            <img src="img/pose-warrior.jpg" alt="Warrior Pose" />
+          </div>
+          <div class="pose" data-name="Tree">
+            <img src="img/pose-tree.jpg" alt="Tree Pose" />
+          </div>
+          <div class="pose" data-name="Downward Dog">
+            <img src="img/pose-downward-dog.jpg" alt="Downward Dog Pose" />
+          </div>
+        </div>
+        <div class="game__names">
+          <div class="name" draggable="true">Tree</div>
+          <div class="name" draggable="true">Downward Dog</div>
+          <div class="name" draggable="true">Warrior</div>
+        </div>
+        <div class="game__result"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join MinFit was one year ago. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Book Now</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="index.html">Home</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="page1.html">Yoga</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="page2.html">Pilates</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="page3.html">Core</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" class="footer__logo" />
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
