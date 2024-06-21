@@ -153,11 +153,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const apiResultsDiv = document.querySelector('.api__results');
 
   fetchDataBtn.addEventListener('click', function () {
-    // Użyj przykładowego API do pobierania danych
+
     fetch('https://jsonplaceholder.typicode.com/posts/1')
       .then(response => response.json())
       .then(data => {
-        // Wyświetl dane w divie
+     
         apiResultsDiv.innerHTML = `
           <h4>${data.title}</h4>
           <p>${data.body}</p>
